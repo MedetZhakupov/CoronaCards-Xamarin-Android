@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{136D9AB1-D094-45DF-B733-78BB5498E061}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CoronaCards</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>CoronaCards</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Corona">
+      <HintPath>..\..\..\..\..\..\Apache\htdocs\edu\EducationApp\bin\Debug\Corona.dll</HintPath>
+    </Reference>
+    <Reference Include="JNLua">
+      <HintPath>..\..\..\..\..\..\Apache\htdocs\edu\EducationApp\bin\Debug\JNLua.dll</HintPath>
+    </Reference>
+    <Reference Include="Network">
+      <HintPath>..\..\..\..\..\..\Apache\htdocs\edu\EducationApp\bin\Debug\Network.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\corona.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Assets\Physics\" />
+    <Folder Include="libs\" />
+    <Folder Include="Assets\Fishies\" />
+    <Folder Include="Assets\JungleScene2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Physics\bamboo.png" />
+    <AndroidAsset Include="Assets\Physics\board.png" />
+    <AndroidAsset Include="Assets\Physics\build.settings" />
+    <AndroidAsset Include="Assets\Physics\coconut.png" />
+    <AndroidAsset Include="Assets\Physics\config.lua" />
+    <AndroidAsset Include="Assets\Physics\Default-568h%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-60.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-60%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-72.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-72%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-76.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-76%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-hdpi.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-ldpi.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-mdpi.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-ouya.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small-40.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small-40%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small-50.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small-50%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-Small%402x.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-xhdpi.png" />
+    <AndroidAsset Include="Assets\Physics\Icon-xxhdpi.png" />
+    <AndroidAsset Include="Assets\Physics\Icon.png" />
+    <AndroidAsset Include="Assets\Physics\Icon%402x.png" />
+    <AndroidAsset Include="Assets\Physics\jungle_bkg.png" />
+    <AndroidAsset Include="Assets\Physics\license.ccdata" />
+    <AndroidAsset Include="Assets\Physics\main.lua" />
+    <AndroidAsset Include="Assets\Physics\ReadMe.txt" />
+    <AndroidAsset Include="Assets\Physics\rock.png" />
+    <AndroidAsset Include="Assets\Fishies\aquariumbackgroundIPhone.jpg" />
+    <AndroidAsset Include="Assets\Fishies\aquariumbackgroundIPhoneLandscape.jpg" />
+    <AndroidAsset Include="Assets\Fishies\bubble_strong_wav.wav" />
+    <AndroidAsset Include="Assets\Fishies\build.settings" />
+    <AndroidAsset Include="Assets\Fishies\config.lua" />
+    <AndroidAsset Include="Assets\Fishies\Default-568h%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\fish.small.blue.png" />
+    <AndroidAsset Include="Assets\Fishies\fish.small.red.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-60.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-60%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-72.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-72%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-76.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-76%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-hdpi.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-ldpi.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-mdpi.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-ouya.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small-40.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small-40%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small-50.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small-50%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-Small%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-xhdpi.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon-xxhdpi.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon.png" />
+    <AndroidAsset Include="Assets\Fishies\Icon%402x.png" />
+    <AndroidAsset Include="Assets\Fishies\license.ccdata" />
+    <AndroidAsset Include="Assets\Fishies\main.lua" />
+    <AndroidAsset Include="Assets\Fishies\ReadMe.txt" />
+    <AndroidAsset Include="Assets\JungleScene2\Bamboo-rgba.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Banana.png" />
+    <AndroidAsset Include="Assets\JungleScene2\build.settings" />
+    <AndroidAsset Include="Assets\JungleScene2\config.lua" />
+    <AndroidAsset Include="Assets\JungleScene2\Default-568h%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Dracena.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Ginger.png" />
+    <AndroidAsset Include="Assets\JungleScene2\grass.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Greenhouse-Palm-acai01.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Greenhouse-Palm-cycas01.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Greenhouse-Palm-jubaea01.png" />
+    <AndroidAsset Include="Assets\JungleScene2\greenman.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-60.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-60%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-72.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-72%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-76.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-76%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-hdpi.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-ldpi.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-mdpi.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-ouya.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small-40.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small-40%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small-50.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small-50%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-Small%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-xhdpi.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon-xxhdpi.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon.png" />
+    <AndroidAsset Include="Assets\JungleScene2\Icon%402x.png" />
+    <AndroidAsset Include="Assets\JungleScene2\license.ccdata" />
+    <AndroidAsset Include="Assets\JungleScene2\main.lua" />
+    <AndroidAsset Include="Assets\JungleScene2\Palm-arecaceae.png" />
+    <AndroidAsset Include="Assets\JungleScene2\ReadMe.txt" />
+    <AndroidAsset Include="Assets\JungleScene2\runningcat.png" />
+    <AndroidAsset Include="Assets\JungleScene2\sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libalmixer.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libcorona.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libjnlua5.1.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\liblua.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libopenal.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libplugins.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libvorbisidec.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+  </ItemGroup>
+</Project>

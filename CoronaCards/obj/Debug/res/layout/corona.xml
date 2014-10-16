@@ -1,0 +1,1 @@
+<View android:layout_width="match_parent" android:layout_height="match_parent" class="com.ansca.corona.CoronaView" android:id="@+id/corona_view" xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,4 @@
+C:\Users\Jia Jye\Documents\Projects\CoronaCards\CoronaCards\bin\Debug\CoronaCards.dll
+C:\Apache\htdocs\edu\EducationApp\bin\Debug\Corona.dll
+C:\Apache\htdocs\edu\EducationApp\bin\Debug\JNLua.dll
+C:\Apache\htdocs\edu\EducationApp\bin\Debug\Network.dll
