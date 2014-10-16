@@ -22,6 +22,7 @@ namespace CoronaCards
 				// Set our view from the "main" layout resource
 				SetContentView (Resource.Layout.Main);
 				mCoronaView = FindViewById<CoronaView> (Resource.Id.corona_view);
+//				Java.IO.File baseDir = Application.Context.GetFileStreamPath ("coronaResources");
 //				mCoronaView.Init ("Physics/");
 				mCoronaView.Init ("JungleScene2/");
 			} catch (Exception ex) {

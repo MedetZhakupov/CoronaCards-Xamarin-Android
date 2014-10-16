@@ -12,5 +12,7 @@ These listed above libraries can be copied from bin folder inside the project
 
 Moreover, you have to include to your project "libs" folder from this sample project which contains ".so" libraries. Additionaly, all ".so" files' BuilAction properties should be selected as a "AndroidNativeLibrary".
 
+If you have any question just post it. I'll try to answer as soon as possible.
+
 Best regards,
 Medet Zhakupov
