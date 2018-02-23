@@ -1,4 +1,4 @@
-<H2>This project is no longer suppoerted.<H2>
+<H2>This project is no longer supported.<H2>
 
 This project was created to show power of CoronaCards on Xamarin-Android
 
