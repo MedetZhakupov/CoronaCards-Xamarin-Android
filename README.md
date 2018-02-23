@@ -1,3 +1,5 @@
+<H2>This project is no longer suppoerted.<H2>
+
 This project was created to show power of CoronaCards on Xamarin-Android
 
 First of all this project won't work; because you have to download license.ccdata file first from CoronaCards.com(You can get trial version for 30 days)
@@ -11,8 +13,6 @@ You can use CoronaCards feature in your own projects, therefor you have to inclu
 These listed above libraries can be copied from bin folder inside the project
 
 Moreover, you have to include to your project "libs" folder from this sample project which contains ".so" libraries. Additionaly, all ".so" files' BuilAction properties should be selected as a "AndroidNativeLibrary".
-
-If you have any question just post it. I'll try to answer as soon as possible.
 
 Best regards,
 Medet Zhakupov
